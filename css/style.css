@@ -1,0 +1,186 @@
+/* CUSTOM PROPS */
+:root {
+    --heading-color:#151515;
+    --text-color:#575757;
+    --accent-color:#6A983C;
+    --light-black-color:#A9A9A9;
+    --bg-color:#F9F9F9;
+    --button-bg-light-grey-color:#F5F5F5;
+
+    /* FONTS */
+    --opensans-font-stack: "Open Sans", "Arial", sans-serif;
+    --poppins-font-stack: "Poppins", "Arial", sans-serif;
+  }
+  
+  
+  /* FONT-FACE */
+
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts//Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts//Poppins-Medium.woff2") format("woff2"),
+    url("../fonts/Poppins-Medium.woff") format("woff");
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts//Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff.woff") format("woff");
+    font-weight:600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts//Poppins-Bold.woff2") format("woff2"),
+    url("../fonts/Poppins-Bold.woff.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  /* GENERAL */
+  html {
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: var(--opensans-font-stack);
+    background-color: #fff;
+    color: var(--heading-color);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  /* CONTAINER */
+  .container {
+    max-width: 1170px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  /* BUTTON */
+  .button {
+    display: inline-block;
+    padding: 11px 40px;
+    border: 3px solid transparent;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: var(--poppins-font-stack);
+    font-weight: bold;
+    background-color:;
+    color: #fff;
+    white-space: nowrap;
+  }
+  
+  .button:hover {
+    border-color:;
+    background-color:;
+    color: ;
+  }
+  
+  .button:active {
+    opacity: 0.6;
+  }
+  
+
+  /* SITE_HEADER */
+.site-header__container{
+    font-family: var(--opensans-font-stack);
+}
+  .sitenav{
+      display: flex;
+      align-items: center;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(21, 21, 21,0.05);
+  }
+  .sitenav-list{
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+  }
+  .sitenav-item:not(:first-child){
+     margin-left: 38px;
+  }
+  .sitenav-link{
+      color: var(--accent-color);
+  }
+  .contact-us{
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+  }
+
+  .contact-us__link{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--heading-color);
+  }
+  .contact-us__link:not(:last-child){
+      margin-right: 33px;
+  }
+  .contact-us__link-chat{
+      color: var(--accent-color);
+  }
+
