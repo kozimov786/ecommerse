@@ -679,8 +679,13 @@
     padding-top: 69px;
     padding-bottom: 64px;
   }
+  .blog-wrapper{
+    display: flex;
+    align-items: flex-start;
+  }
   .dinner-tips{
     position: relative;
+    margin-right: 31px;
   }
   .dinner-tips::before{
     content: "Dinner tips";
@@ -699,7 +704,7 @@
     border-radius: 12px;
   }
   .dinner-tips__title{
-    width: 380px;
+    max-width: 380px;
     font-weight: 600;
     font-size: 22px;
     line-height: 33px;
@@ -734,9 +739,58 @@
   .author-time{
     margin-left: 10px;
   }
-
-
-
+  .vegetable{
+    width: 269px;
+    margin-right: 31px;
+  }
+  .time-box{
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--heading-color);
+  }
+  .vegetable-img{
+    margin-bottom: 24px;
+  }
+  .date-time{
+    margin-left: 10px;
+  }
+  .vegetable-title{
+    font-weight: 600;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--heading-color);
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .vegetable-title::before{
+    content: "Vegetable";
+    width: 82px;
+    height: 18px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    background-color: #F4F8EC;
+    color: var(--accent-color);
+    padding: 0 8px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+  }
+  .good-start{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+  }
+  .good-start__info{
+    width: 225px;
+    margin-right: 48px;
+  }
+  .good-start__title{
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
 
 
 
@@ -891,6 +945,16 @@
     .more-list .menu-item:nth-child(6){
       display: block;
     }
+    .blog-wrapper{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .vegetable{
+      flex-grow: 1;
+    }
+    .good-start{
+      margin-top: 30px;
+    }
     
   }
  
@@ -934,6 +998,19 @@
     }
     .baskets-wrapper{
       margin-bottom: 20px;
+    }
+    .blog-wrapper{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .dinner-tips,
+    .vegetable{
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    .good-start{
+      margin-top: 0;
     }
 }
   @media only screen and (max-width:831px) {
@@ -1114,5 +1191,8 @@
     }
     .accent-card{
       width: 320px;
+    }
+    .dinner-tips__title{
+      font-size: 18px;
     }
   }
