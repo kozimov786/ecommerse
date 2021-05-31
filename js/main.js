@@ -16,5 +16,22 @@ window.addEventListener('DOMContentLoaded',()=>{
     const body = document.body;
     body.classList.toggle("nav-open");
 });
-    
+
+
 })
+feather.replace();
+
+const nextEl = document.getElementById("next");
+const previousEl = document.getElementById("previous");
+const sliderEl = document.getElementById("slider");
+nextEl.addEventListener("click", onNextClick);
+previousEl.addEventListener("click", onPreviousClick);
+
+function onNextClick() {
+  const imgWidth = sliderEl.offsetWidth;
+  sliderEl.scrollLeft += imgWidth;
+}
+function onPreviousClick() {
+  const imgWidth = sliderEl.offsetWidth;
+  sliderEl.scrollLeft -= imgWidth;
+}
