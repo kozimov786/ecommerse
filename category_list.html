@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>eCommerse</title>
@@ -379,306 +378,390 @@
 
 
     <main class="site-main">
-        <div class="site-main__container container">
-            <ul class="side-menu__list">
-                <li class="side-menu__item">
-                    <h2 class="side-main__title">Category menu</h2>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Bakery</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Fruit and vegetables</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Meat and fish</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Drinks</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Kitchen</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__btn btn" href="#">More categories</a>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="page-links__wrapper">
+                <a class="home-page__link" href="#">Homepage</a>
+                <a class="category-page__link" href="#">Fruit and vegetables</a>
+            </div>
 
-            <div class="accent-cards__wrapper">
-                <div class="accent-card">
-                    <p class="accent-card__text">Banner subfocus</p>
-                    <h2 class="accent-card__title">Space for heading</h2>
-                    <a class="accent-card__btn btn" href="#">Read recepies</a>
-                </div>
-                <div class="accent-card">
-                    <p class="accent-card__text">Banner subfocus</p>
-                    <h2 class="accent-card__title">Space for heading</h2>
-                    <a class="accent-card__btn btn" href="#">Read recepies</a>
+            <div class="view-part">
+                <h1 class="view-part__title">Fruit and vegetables</h1>
+
+                <ul class="view-list">
+                    <li class="view-item view-item__grid">
+                        <a class="view-link view-link__active" href="#">Grid view</a>
+                    </li>
+                    <li class="view-item view-item__list">
+                        <a class="view-link" href="#">List view</a>
+                    </li>
+                    <li class="view-item view-item__products">
+                        <a class="view-link" href="#">Products</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-form__wrapper">
+                <form class="filter-form" action="#">
+                    <div class="input-wrapper radio-wrapper">
+                        <label class="input-label" for="input-radio-field">Filtre text
+                            <input type="radio" name="input-radio" id="input-radio-field" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="input-label" for="input-radio-field2">Filtre text
+                            <input type="radio" name="input-radio" id="input-radio-field2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="input-wrapper checkbox__wrapper">
+                        <label class="input-checkbox" for="input-checkbox__field">Filtre
+                            <input class="input-check" type="checkbox" name="input-checkbox" id="input-checkbox__field"
+                                checked>
+                            <span class="checkbox-checkmark"></span>
+                        </label>
+                        <span class="nbm-text">Nbm</span>
+                    </div>
+
+                    <div class="input-wrapper checkbox__wrapper">
+                        <label class="input-checkbox" for="input-checkbox__field">Filtre
+                            <input class="input-check" type="checkbox" name="input-checkbox" id="input-checkbox__field"
+                                checked>
+                            <span class="checkbox-checkmark"></span>
+                        </label>
+                        <span class="nbm-text">Nbm</span>
+                    </div>
+
+                    <div class="input-wrapper checkbox__wrapper checkbox__wrapper-select">
+                        <label class="input-checkbox" for="input-checkbox__field">Filtre
+                            <input class="input-check" type="checkbox" name="input-checkbox" id="input-checkbox__field"
+                                checked>
+                            <span class="checkbox-checkmark"></span>
+                        </label>
+                        <span class="nbm-text">12</span>
+                        <select class="filter-form__select" name="" id="">
+                            <option value="selected">Selected</option>
+                            <option value="selected">Selected</option>
+                            <option value="selected">Selected</option>
+                            <option value="selected">Selected</option>
+                        </select>
+                    </div>
+
+                </form>
+                <div class="applied-filters">
+                    <span class="applied-filters__text">Applied filtres:</span>
+                    <span class="applied-filters__selected">Selected Filtre</span>
+                    <span class="applied-filters__selected">Selected Filtre</span>
                 </div>
             </div>
         </div>
 
-        <div class="site-main__container container">
-            <ul class="side-menu__list">
-                <li class="side-main__item">
-                    <h2 class="side-menu__title">Best selling products</h2>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Kitchen</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Meat and fish</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Special nutrition</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Pharmacy</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Baby</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__btn btn" href="#">More categories</a>
-                </li>
-            </ul>
+        <div class="main-content__container container">
+            <div class="sidebar">
+                 <ul class="category-list">
+                     <li class="category-item">
+                         <h2 class="category-title">Categories</h2>
+                     </li>
+                     <li class="category-item">
+                        <p class="category-text">Category name</p>
+                        <span class="categroy-count">320</span>
+                    </li>
+                    <li class="category-item">
+                        <p class="category-text">Category name</p>
+                        <span class="categroy-count">112</span>
+                    </li>
+                    <li class="category-item">
+                        <p class="category-text">Category name</p>
+                        <span class="categroy-count">32</span>
+                    </li>
+                    <li class="category-item">
+                        <p class="category-text">Category name</p>
+                        <span class="categroy-count">48</span>
+                    </li>
+                 </ul>
+            </div>
+            <div class="product-card__wrapper">
 
-            <div class="cards-wrapper">
-                <div class="card">
-                    <h3 class="card-title">Product Title</h3>
-                    <p class="card-text">Space for a small product description </p>
-                    <div class="card-box">
-                        <b class="card-price">1.48 USD<span></span></b>
-                        <a class="card-btn btn" href="#">Buy now</a>
+                <div class="product-card card">
+                    <div class="product-info">
+                        <h3 class="product-card__title">Product title</h3>
+                        <p class="product-card__text">Space for a small product description </p>
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-white.png" alt="star img" width="16" height="16">
+                            </li>
+                        </ul>
+                        <div class="desc-wrapper">
+                            <div>
+                                <p class="product-info__desc">Fresheness</p>
+                                <p class="product-info__desc">Farm</p>
+                                <p class="product-info__desc">Delivery</p>
+                                <p class="product-info__desc">Stock</p>
+                            </div>
+                            <div>
+                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra fresh)</p>
+                                <p class="product-info__desc">Grocery Tarm Fields</p>
+                                <p class="product-info__desc">Europe</p>
+                                <p class="product-info__desc product-info__desc-accent">320 pcs</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="product-cost">
+                        <div class="product-cost__numg-box">
+                         <p class="product-cost__numb">36.99 USD</p>
+                         <span class="product-cost__disc">48.56</span>
+                        </div>
+ 
+                        <div class="product-cost__shipping-box">
+                            <p class="product-cost__shipping">Free Shipping</p>
+                            <span class="product-cost__delivery">Delivery in 1 day</span>
+                        </div>
+ 
+                        <div class="product-btn__wrapper">
+                            <a class="product-cost__btn card-btn" href="#">Product Detail</a>
+                            <a class="product-cost__wishlist btn" href="#">Add to wish list</a>
+                        </div>
+                       
+                 </div>
                 </div>
 
-                <div class="card">
-                    <h3 class="card-title">Product Title</h3>
-                    <p class="card-text">Space for a small product description </p>
-                    <div class="card-box">
-                        <b class="card-price">1.48 USD<span></span></b>
-                        <a class="card-btn btn" href="#">Buy now</a>
+                <div class="product-card card">
+                    <div class="product-info">
+                        <h3 class="product-card__title">Product title</h3>
+                        <p class="product-card__text">Space for a small product description </p>
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-white.png" alt="star img" width="16" height="16">
+                            </li>
+                        </ul>
+                        <div class="desc-wrapper">
+                            <div>
+                                <p class="product-info__desc">Fresheness</p>
+                                <p class="product-info__desc">Farm</p>
+                                <p class="product-info__desc">Delivery</p>
+                                <p class="product-info__desc">Stock</p>
+                            </div>
+                            <div>
+                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra fresh)</p>
+                                <p class="product-info__desc">Grocery Tarm Fields</p>
+                                <p class="product-info__desc">Europe</p>
+                                <p class="product-info__desc product-info__desc-accent">320 pcs</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="product-cost">
+                        <div class="product-cost__numg-box">
+                         <p class="product-cost__numb">36.99 USD</p>
+                         <span class="product-cost__disc">48.56</span>
+                        </div>
+ 
+                        <div class="product-cost__shipping-box">
+                            <p class="product-cost__shipping">Free Shipping</p>
+                            <span class="product-cost__delivery">Delivery in 1 day</span>
+                        </div>
+ 
+                        <div class="product-btn__wrapper">
+                            <a class="product-cost__btn card-btn" href="#">Product Detail</a>
+                            <a class="product-cost__wishlist btn" href="#">Add to wish list</a>
+                        </div>
+                       
+                 </div>
                 </div>
 
-                <div class="card">
-                    <h3 class="card-title">Product Title</h3>
-                    <p class="card-text">Space for a small product description </p>
-                    <div class="card-box">
-                        <b class="card-price">1.48 USD<span></span></b>
-                        <a class="card-btn btn" href="#">Buy now</a>
+                <div class="product-card card">
+                    <div class="product-info">
+                        <h3 class="product-card__title">Product title</h3>
+                        <p class="product-card__text">Space for a small product description </p>
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-white.png" alt="star img" width="16" height="16">
+                            </li>
+                        </ul>
+                        <div class="desc-wrapper">
+                            <div>
+                                <p class="product-info__desc">Fresheness</p>
+                                <p class="product-info__desc">Farm</p>
+                                <p class="product-info__desc">Delivery</p>
+                                <p class="product-info__desc">Stock</p>
+                            </div>
+                            <div>
+                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra fresh)</p>
+                                <p class="product-info__desc">Grocery Tarm Fields</p>
+                                <p class="product-info__desc">Europe</p>
+                                <p class="product-info__desc product-info__desc-accent">320 pcs</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="product-cost">
+                        <div class="product-cost__numg-box">
+                         <p class="product-cost__numb">36.99 USD</p>
+                         <span class="product-cost__disc">48.56</span>
+                        </div>
+ 
+                        <div class="product-cost__shipping-box">
+                            <p class="product-cost__shipping">Free Shipping</p>
+                            <span class="product-cost__delivery">Delivery in 1 day</span>
+                        </div>
+ 
+                        <div class="product-btn__wrapper">
+                            <a class="product-cost__btn card-btn" href="#">Product Detail</a>
+                            <a class="product-cost__wishlist btn" href="#">Add to wish list</a>
+                        </div>
+                       
+                 </div>
                 </div>
+
+                <div class="product-card card">
+                    <div class="product-info">
+                        <h3 class="product-card__title">Product title</h3>
+                        <p class="product-card__text">Space for a small product description </p>
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-white.png" alt="star img" width="16" height="16">
+                            </li>
+                        </ul>
+                        <div class="desc-wrapper">
+                            <div>
+                                <p class="product-info__desc">Fresheness</p>
+                                <p class="product-info__desc">Farm</p>
+                                <p class="product-info__desc">Delivery</p>
+                                <p class="product-info__desc">Stock</p>
+                            </div>
+                            <div>
+                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra fresh)</p>
+                                <p class="product-info__desc">Grocery Tarm Fields</p>
+                                <p class="product-info__desc">Europe</p>
+                                <p class="product-info__desc product-info__desc-accent">320 pcs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cost">
+                        <div class="product-cost__numg-box">
+                         <p class="product-cost__numb">36.99 USD</p>
+                         <span class="product-cost__disc">48.56</span>
+                        </div>
+ 
+                        <div class="product-cost__shipping-box">
+                            <p class="product-cost__shipping">Free Shipping</p>
+                            <span class="product-cost__delivery">Delivery in 1 day</span>
+                        </div>
+ 
+                        <div class="product-btn__wrapper">
+                            <a class="product-cost__btn card-btn" href="#">Product Detail</a>
+                            <a class="product-cost__wishlist btn" href="#">Add to wish list</a>
+                        </div>
+                       
+                 </div>
+                </div>
+
+                <div class="product-card card">
+                    <div class="product-info">
+                        <h3 class="product-card__title">Product title</h3>
+                        <p class="product-card__text">Space for a small product description </p>
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-black.png" alt="star img" width="16" height="16">
+                            </li>
+                            <li class="product-item">
+                                <img src="img/star-white.png" alt="star img" width="16" height="16">
+                            </li>
+                        </ul>
+                        <div class="desc-wrapper">
+                            <div>
+                                <p class="product-info__desc">Fresheness</p>
+                                <p class="product-info__desc">Farm</p>
+                                <p class="product-info__desc">Delivery</p>
+                                <p class="product-info__desc">Stock</p>
+                            </div>
+                            <div>
+                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra fresh)</p>
+                                <p class="product-info__desc">Grocery Tarm Fields</p>
+                                <p class="product-info__desc">Europe</p>
+                                <p class="product-info__desc product-info__desc-accent">320 pcs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cost">
+                        <div class="product-cost__numg-box">
+                         <p class="product-cost__numb">36.99 USD</p>
+                         <span class="product-cost__disc">48.56</span>
+                        </div>
+ 
+                        <div class="product-cost__shipping-box">
+                            <p class="product-cost__shipping">Free Shipping</p>
+                            <span class="product-cost__delivery">Delivery in 1 day</span>
+                        </div>
+ 
+                        <div class="product-btn__wrapper">
+                            <a class="product-cost__btn card-btn" href="#">Product Detail</a>
+                            <a class="product-cost__wishlist btn" href="#">Add to wish list</a>
+                        </div>
+                       
+                 </div>
+                </div>
+
             </div>
         </div>
-
-        <div class="site-main__container container">
-            <ul class="side-menu__list">
-                <li class="side-main__item">
-                    <h2 class="side-menu__title">Best from Farmers</h2>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Carrots</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Tomatoes</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Tomatoes</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Chicken</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__link" href="#">Pork</a>
-                </li>
-                <li class="side-menu__item">
-                    <a class="side-menu__btn btn" href="#">More categories</a>
-                </li>
-            </ul>
-
-            <div class="cards-wrapper">
-                <div class="card">
-                    <h3 class="card-title">Product Title</h3>
-                    <p class="card-text">Space for a small product description </p>
-                    <div class="card-box">
-                        <b class="card-price">1.48 USD<span></span></b>
-                        <a class="card-btn btn" href="#">Buy now</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="card-title">Product Title</h3>
-                    <p class="card-text">Space for a small product description </p>
-                    <div class="card-box">
-                        <b class="card-price">1.48 USD<span></span></b>
-                        <a class="card-btn btn" href="#">Buy now</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="card-title">Product Title</h3>
-                    <p class="card-text">Space for a small product description </p>
-                    <div class="card-box">
-                        <b class="card-price">1.48 USD<span></span></b>
-                        <a class="card-btn btn" href="#">Buy now</a>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <section class="customers">
 
-            <div class="global-container container">
-                <h2 class="global-container__title">Our customers says</h2>
-                <a class="global-container__btn" href="#">Button</a>
-            </div>
 
-            <ul class="slides">
-                <li class="slide-card">
-                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
-                        smooth as pie. You will get all what you need by writiing a text here " </p>
-                    <h3 class="slide-card__user">Name and Surname</h3>
-                    <img class="slide-card__img" src="img/customer-img.png" alt="customer image" width="48" height="48">
-                </li>
-                <li class="slide-card">
-                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
-                        smooth as pie. You will get all what you need by writiing a text here " </p>
-                    <h3 class="slide-card__user">Name and Surname</h3>
-                    <img class="slide-card__img" src="img/customer-img2.png" alt="customer image" width="48"
-                        height="48">
-                </li>
-                <li class="slide-card">
-                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
-                        smooth as pie. You will get all what you need by writiing a text here " </p>
-                    <h3 class="slide-card__user">Name and Surname</h3>
-                    <img class="slide-card__img" src="img/customer-img.png" alt="customer image" width="48" height="48">
-                </li>
-                <li class="slide-card">
-                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
-                        smooth as pie. You will get all what you need by writiing a text here " </p>
-                    <h3 class="slide-card__user">Name and Surname</h3>
-                    <img class="slide-card__img" src="img/customer-img2.png" alt="customer image" width="48"
-                        height="48">
-                </li>
-
-                <li class="slide-card">
-                        <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here " </p>
-                        <h3 class="slide-card__user">Name and Surname</h3>
-                        <img class="slide-card__img" src="img/customer-img.png" alt="customer image" width="48" height="48">
-                </li> 
-
-            </ul>
-
-        </section>
-
-        <section class="headline">
-            <div class="headline-container container">
-
-                <div class="global-container">
-                    <h2 class="global-container__title">Section Headline</h2>
-                    <a class="global-container__btn" href="#">Button</a>
-                </div>
-
-                <div class="cards-wrapper">
-                    <div class="card">
-                        <h3 class="card-title">Product Title</h3>
-                        <p class="card-text">Space for a small product description </p>
-                        <div class="card-box">
-                            <b class="card-price">1.48 USD<span></span></b>
-                            <a class="card-btn btn" href="#">Buy now</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3 class="card-title">Product Title</h3>
-                        <p class="card-text">Space for a small product description </p>
-                        <div class="card-box">
-                            <b class="card-price">1.48 USD<span></span></b>
-                            <a class="card-btn btn" href="#">Buy now</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3 class="card-title">Product Title</h3>
-                        <p class="card-text">Space for a small product description </p>
-                        <div class="card-box">
-                            <b class="card-price">1.48 USD<span></span></b>
-                            <a class="card-btn btn" href="#">Buy now</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3 class="card-title">Product Title</h3>
-                        <p class="card-text">Space for a small product description </p>
-                        <div class="card-box">
-                            <b class="card-price">1.48 USD<span></span></b>
-                            <a class="card-btn btn" href="#">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="blog">
-            <div class="blog-container container">
-                <div class="global-container">
-                    <h2 class="global-container__title">Read our Blog posts</h2>
-                    <a class="global-container__btn" href="#">Go to Blog</a>
-                </div>
-
-                <div class="blog-wrapper">
-                   <div class="dinner-tips">
-                       <a class="dinner-tips__link" href="#">
-                        <img class="dinner-tips__img" src="img/food5.png" alt="food" width="469" height="400">
-                       </a>
-                       <h3 class="dinner-tips__title">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
-                       <span class="author-box"> Author<time class="author-time" datetime="2021-12-02">17. 6. 2020</time></span>
-                   </div>
-
-                   <div class="vegetable">
-                       <img class="vegetable-img" src="img/food.png" alt="food" width="269" height="180">
-                       <a class="vegetable__link" href="#">
-                        <h3 class="vegetable-title">Which vegetable your family will love and want’s eat each day</h3>
-                       </a>
-                       <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
-                   </div>
-
-                   <div class="left-side">
-                       <div class="good-start">
-                          <div class="good-start__info">
-                            <a class="good-start__link" href="#">
-                                <h3 class="good-start__title">Salat is kinda good start to your morning routines</h3>
-                            </a>
-                            <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
-                          </div>
-                          <img src="img/food4.png" alt="food" width="96" height="96">
-                       </div>
-                       <div class="good-start">
-                        <div class="good-start__info">
-                          <a class="good-start__link" href="#">
-                              <h3 class="good-start__title">Salat is kinda good start to your morning routines</h3>
-                          </a>
-                          <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
-                        </div>
-                        <img src="img/food3.png" alt="food" width="96" height="96">
-                     </div>
-                     <div class="good-start">
-                        <div class="good-start__info">
-                          <a class="good-start__link" href="#">
-                              <h3 class="good-start__title">Salat is kinda good start to your morning routines</h3>
-                          </a>
-                          <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
-                        </div>
-                        <img src="img/food2.png" alt="food" width="96" height="96">
-                     </div>
-                   </div>
-                </div>
-
-            </div>
-        </section>
-        
     </main>
 
 
@@ -829,7 +912,7 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 
