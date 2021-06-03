@@ -206,6 +206,7 @@
      margin-left: 15px;
      position: relative;
  }
+
  .disabled-search{
    display: none;
  }
@@ -932,7 +933,7 @@
   margin-right: 17px;
 }
 
-.input-label input {
+.input-wrapper input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -998,7 +999,7 @@
   margin-right: 8px;
 }
 
-input[type="checkbox"] {
+.range input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -1404,7 +1405,7 @@ input[type="checkbox"] {
   margin-left: -9px;
 }
 
-input {
+.range-slide input {
   -webkit-appearance: none;
   appearance: none;
   position: absolute;
@@ -1417,7 +1418,7 @@ input {
   margin: 0;
 }
 
-input::-webkit-slider-thumb {
+.range-slide input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   pointer-events: all;

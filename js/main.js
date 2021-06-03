@@ -15,10 +15,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     burger.addEventListener("click", function () {
     const body = document.body;
     body.classList.toggle("nav-open");
-});
-
-
-
+    });
 });
 
 
