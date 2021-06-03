@@ -457,11 +457,11 @@
 
         <div class="main-content__container container">
             <div class="sidebar">
-                 <ul class="category-list">
-                     <li class="category-item">
-                         <h2 class="category-title">Categories</h2>
-                     </li>
-                     <li class="category-item">
+                <ul class="category-list">
+                    <li class="category-item">
+                        <h2 class="category-title">Categories</h2>
+                    </li>
+                    <li class="category-item">
                         <p class="category-text">Category name</p>
                         <span class="categroy-count">320</span>
                     </li>
@@ -477,13 +477,14 @@
                         <p class="category-text">Category name</p>
                         <span class="categroy-count">48</span>
                     </li>
-                 </ul>
+                </ul>
 
-                 <div class="brands-checkbox__wrapper">
-                     <h2 class="sidebar-title">Brands</h2>
+                <div class="brands-checkbox__wrapper">
+                    <h2 class="sidebar-title">Brands</h2>
                     <form action="">
                         <label class="input-checkbox" for="input-brands__field">Filtre by brand item
-                            <input class="input-check" type="checkbox" name="input-checkbox" id="input-brands__field" checked="checked">
+                            <input class="input-check" type="checkbox" name="input-checkbox" id="input-brands__field"
+                                checked="checked">
                             <span class="checkbox-checkmark"></span>
                         </label>
                         <label class="input-checkbox" for="input-brands__field2">Filtre by brand item
@@ -503,33 +504,62 @@
                             <span class="checkbox-checkmark"></span>
                         </label>
                     </form>
-                 </div>
-
-                 <div class="rating-checkbox__wrapper">
-                    <h2 class="sidebar-title">Rating</h2>
-                   <form action="">
-                       <label class="input-checkbox star-rating star-five" for="input-rating__field">
-                           <input class="input-check" type="radio" name="input-checkbox" id="input-rating__field" checked>
-                           <span class="checkbox-checkmark"></span>
-                       </label>
-                       <label class="input-checkbox star-rating star-four" for="input-rating__field2">
-                           <input class="input-check" type="radio" name="input-checkbox" id="input-rating__field2">
-                           <span class="checkbox-checkmark"></span>
-                       </label>
-                       <label class="input-checkbox star-rating star-three" for="input-rating__field3">
-                           <input class="input-check" type="radio" name="input-checkbox" id="input-rating__field3">
-                           <span class="checkbox-checkmark"></span>
-                       </label>
-                       <label class="input-checkbox star-rating star-two" for="input-rating__field4">
-                           <input class="input-check" type="radio" name="input-checkbox" id="input-rating__field4">
-                           <span class="checkbox-checkmark"></span>
-                       </label>
-                       <label class="input-checkbox star-rating star-one" for="input-rating__field5">
-                           <input class="input-check" type="radio" name="input-checkbox" id="input-rating__field5">
-                           <span class="checkbox-checkmark"></span>
-                       </label>
-                   </form>
                 </div>
+
+                <div class="rating-checkbox__wrapper">
+                    <h2 class="sidebar-title">Rating</h2>
+                    <form action="">
+                        <label class="input-checkbox star-rating star-five" for="input-rating__field">
+                            <input class="input-check" type="radio" name="input-checkbox" id="input-rating__field"
+                                checked>
+                            <span class="checkbox-checkmark"></span>
+                        </label>
+                        <label class="input-checkbox star-rating star-four" for="input-rating__field2">
+                            <input class="input-check" type="radio" name="input-checkbox" id="input-rating__field2">
+                            <span class="checkbox-checkmark"></span>
+                        </label>
+                        <label class="input-checkbox star-rating star-three" for="input-rating__field3">
+                            <input class="input-check" type="radio" name="input-checkbox" id="input-rating__field3">
+                            <span class="checkbox-checkmark"></span>
+                        </label>
+                        <label class="input-checkbox star-rating star-two" for="input-rating__field4">
+                            <input class="input-check" type="radio" name="input-checkbox" id="input-rating__field4">
+                            <span class="checkbox-checkmark"></span>
+                        </label>
+                        <label class="input-checkbox star-rating star-one" for="input-rating__field5">
+                            <input class="input-check" type="radio" name="input-checkbox" id="input-rating__field5">
+                            <span class="checkbox-checkmark"></span>
+                        </label>
+                    </form>
+                </div>
+
+                <div class="range">
+                    <h2 class="sidebar-title">Price</h2>
+                    <div class="range-slide">
+                        <div class="slide">
+                            <div class="line" id="line" style="left: 0%; right: 0%;"></div>
+                            <span class="thumb" id="thumbMin" style="left: 0%;"></span>
+                            <span class="thumb" id="thumbMax" style="left: 100%;"></span>
+                        </div>
+                        <input id="rangeMin" type="range" max="100" min="10" step="5" value="0">
+                        <input id="rangeMax" type="range" max="100" min="10" step="5" value="100">
+                    </div>
+                    <div class="display">
+                        <p class="min">Min
+                            <span id="min">0</span>
+                        </p>
+                        <p class="max">Max
+                            <span id="max">000</span>
+                        </p>
+                    </div>
+                </div>
+                 
+                <div class="sidebar-btn__wrapper">
+                    <a class="sidebar-btn card-btn" href="#">Apply</a>
+                    <a class="sidebar-btn__reset btn" href="#">Reset</a>
+                </div>
+
+
             </div>
             <div class="product-card__wrapper">
 
@@ -562,7 +592,8 @@
                                 <p class="product-info__desc">Stock</p>
                             </div>
                             <div>
-                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra fresh)</p>
+                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra
+                                    fresh)</p>
                                 <p class="product-info__desc">Grocery Tarm Fields</p>
                                 <p class="product-info__desc">Europe</p>
                                 <p class="product-info__desc product-info__desc-accent">320 pcs</p>
@@ -571,21 +602,21 @@
                     </div>
                     <div class="product-cost">
                         <div class="product-cost__numg-box">
-                         <p class="product-cost__numb">36.99 USD</p>
-                         <span class="product-cost__disc">48.56</span>
+                            <p class="product-cost__numb">36.99 USD</p>
+                            <span class="product-cost__disc">48.56</span>
                         </div>
- 
+
                         <div class="product-cost__shipping-box">
                             <p class="product-cost__shipping">Free Shipping</p>
                             <span class="product-cost__delivery">Delivery in 1 day</span>
                         </div>
- 
+
                         <div class="product-btn__wrapper">
                             <a class="product-cost__btn card-btn" href="#">Product Detail</a>
                             <a class="product-cost__wishlist btn" href="#">Add to wish list</a>
                         </div>
-                       
-                 </div>
+
+                    </div>
                 </div>
 
                 <div class="product-card card">
@@ -617,7 +648,8 @@
                                 <p class="product-info__desc">Stock</p>
                             </div>
                             <div>
-                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra fresh)</p>
+                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra
+                                    fresh)</p>
                                 <p class="product-info__desc">Grocery Tarm Fields</p>
                                 <p class="product-info__desc">Europe</p>
                                 <p class="product-info__desc product-info__desc-accent">320 pcs</p>
@@ -626,21 +658,21 @@
                     </div>
                     <div class="product-cost">
                         <div class="product-cost__numg-box">
-                         <p class="product-cost__numb">36.99 USD</p>
-                         <span class="product-cost__disc">48.56</span>
+                            <p class="product-cost__numb">36.99 USD</p>
+                            <span class="product-cost__disc">48.56</span>
                         </div>
- 
+
                         <div class="product-cost__shipping-box">
                             <p class="product-cost__shipping">Free Shipping</p>
                             <span class="product-cost__delivery">Delivery in 1 day</span>
                         </div>
- 
+
                         <div class="product-btn__wrapper">
                             <a class="product-cost__btn card-btn" href="#">Product Detail</a>
                             <a class="product-cost__wishlist btn" href="#">Add to wish list</a>
                         </div>
-                       
-                 </div>
+
+                    </div>
                 </div>
 
                 <div class="product-card card">
@@ -672,7 +704,8 @@
                                 <p class="product-info__desc">Stock</p>
                             </div>
                             <div>
-                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra fresh)</p>
+                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra
+                                    fresh)</p>
                                 <p class="product-info__desc">Grocery Tarm Fields</p>
                                 <p class="product-info__desc">Europe</p>
                                 <p class="product-info__desc product-info__desc-accent">320 pcs</p>
@@ -681,21 +714,21 @@
                     </div>
                     <div class="product-cost">
                         <div class="product-cost__numg-box">
-                         <p class="product-cost__numb">36.99 USD</p>
-                         <span class="product-cost__disc">48.56</span>
+                            <p class="product-cost__numb">36.99 USD</p>
+                            <span class="product-cost__disc">48.56</span>
                         </div>
- 
+
                         <div class="product-cost__shipping-box">
                             <p class="product-cost__shipping">Free Shipping</p>
                             <span class="product-cost__delivery">Delivery in 1 day</span>
                         </div>
- 
+
                         <div class="product-btn__wrapper">
                             <a class="product-cost__btn card-btn" href="#">Product Detail</a>
                             <a class="product-cost__wishlist btn" href="#">Add to wish list</a>
                         </div>
-                       
-                 </div>
+
+                    </div>
                 </div>
 
                 <div class="product-card card">
@@ -727,7 +760,8 @@
                                 <p class="product-info__desc">Stock</p>
                             </div>
                             <div>
-                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra fresh)</p>
+                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra
+                                    fresh)</p>
                                 <p class="product-info__desc">Grocery Tarm Fields</p>
                                 <p class="product-info__desc">Europe</p>
                                 <p class="product-info__desc product-info__desc-accent">320 pcs</p>
@@ -736,21 +770,21 @@
                     </div>
                     <div class="product-cost">
                         <div class="product-cost__numg-box">
-                         <p class="product-cost__numb">36.99 USD</p>
-                         <span class="product-cost__disc">48.56</span>
+                            <p class="product-cost__numb">36.99 USD</p>
+                            <span class="product-cost__disc">48.56</span>
                         </div>
- 
+
                         <div class="product-cost__shipping-box">
                             <p class="product-cost__shipping">Free Shipping</p>
                             <span class="product-cost__delivery">Delivery in 1 day</span>
                         </div>
- 
+
                         <div class="product-btn__wrapper">
                             <a class="product-cost__btn card-btn" href="#">Product Detail</a>
                             <a class="product-cost__wishlist btn" href="#">Add to wish list</a>
                         </div>
-                       
-                 </div>
+
+                    </div>
                 </div>
 
                 <div class="product-card card">
@@ -782,7 +816,8 @@
                                 <p class="product-info__desc">Stock</p>
                             </div>
                             <div>
-                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra fresh)</p>
+                                <p class="product-info__desc"><span class="product-info__desc-accent">New</span>(Extra
+                                    fresh)</p>
                                 <p class="product-info__desc">Grocery Tarm Fields</p>
                                 <p class="product-info__desc">Europe</p>
                                 <p class="product-info__desc product-info__desc-accent">320 pcs</p>
@@ -791,29 +826,53 @@
                     </div>
                     <div class="product-cost">
                         <div class="product-cost__numg-box">
-                         <p class="product-cost__numb">36.99 USD</p>
-                         <span class="product-cost__disc">48.56</span>
+                            <p class="product-cost__numb">36.99 USD</p>
+                            <span class="product-cost__disc">48.56</span>
                         </div>
- 
+
                         <div class="product-cost__shipping-box">
                             <p class="product-cost__shipping">Free Shipping</p>
                             <span class="product-cost__delivery">Delivery in 1 day</span>
                         </div>
- 
+
                         <div class="product-btn__wrapper">
                             <a class="product-cost__btn card-btn" href="#">Product Detail</a>
                             <a class="product-cost__wishlist btn" href="#">Add to wish list</a>
                         </div>
-                       
-                 </div>
+                    </div>
                 </div>
 
             </div>
+
         </div>
+        
+        <div class="main-footer__nav container">
+            <ol class="page-number__list">
+                <li class="page-number__item">
+                    <a class="page-number__text">Page:</a>
+                </li>
+                <li class="page-number__item">
+                    <a class="page-number__link" href="#">1</a>
+                </li>
+                <li class="page-number__item">
+                    <a class="page-number__link" href="#">2</a>
+                </li>
+                <li class="page-number__item">
+                    <a class="page-number__link active-page__number" href="#">3</a>
+                </li>
+                <li class="page-number__item">
+                    <a class="page-number__link" href="#">4</a>
+                </li>
+            </ol>
+             
+            <a class="main-footer__btn card-btn" href="#">Show more products</a>
+
+            <div class="main-footer__product-wrapper">
+                <span class="main-footer__product-count">336</span>
+                <p class="main-footer__product-text">Products</p>
+            </div>
         </div>
-
-
-
+        
     </main>
 
 
@@ -964,8 +1023,10 @@
         </div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
