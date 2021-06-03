@@ -898,10 +898,12 @@
     line-height: 19px;
     font-weight: normal;
     margin-bottom: 16px;
+    
   }
   .filter-form__wrapper{
     padding-top: 16px;
     padding-bottom: 16px;
+    flex-wrap: wrap;
   }
  .input-wrapper{
    background-color: #F9F9F9;
@@ -1116,11 +1118,11 @@ input[type="checkbox"] {
    display: flex;
    align-items: start;
    position: relative;
+   margin: 0 auto;
   }
   .product-card:not(:last-child){
-   margin-right: 0;
+    margin-right: 0;
    margin-bottom: 32px;
-
  }
  .product-card::before{
    content: "";
@@ -1664,6 +1666,30 @@ input::-webkit-slider-thumb {
       text-align: center;
       margin-bottom: 40px;
     }
+    .product-info{
+      margin-left: 280px;
+    }
+  }
+  @media only screen and (max-width:1065px){
+    .product-info{
+      margin-left: 260px;
+    }
+    .main-content__container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .product-card__wrapper{
+      order: -1;
+    }
+    .sidebar{
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+    }
+    .sidebar-btn__wrapper{
+      justify-content: center;
+    }
   }
   @media only screen and (max-width:1012px) {
     .more-item{
@@ -1711,6 +1737,24 @@ input::-webkit-slider-thumb {
        margin-right: 0;
        margin-bottom: 30px;
      }
+     .product-card__wrapper{
+       max-width: 350px;
+     }
+     .product-card{
+       flex-direction: column;
+       max-width: 330px;
+       text-align: center;
+       align-items: center;
+     }
+     
+     .product-info{
+       margin: 0;
+       margin-bottom: 20px;
+     }
+     .product-card::before{
+       position: relative;
+       margin-bottom: 20px;
+     }
   }
   @media only screen and (max-width:860px){
     .header-main{
@@ -1741,6 +1785,13 @@ input::-webkit-slider-thumb {
     }
     .good-start{
       margin-top: 0;
+    }
+    .filter-form{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .filter-form .input-wrapper{
+      margin-bottom: 20px;
     }
 }
   @media only screen and (max-width:831px) {
@@ -1866,8 +1917,14 @@ input::-webkit-slider-thumb {
          .basket{
              margin-left: 20px;
          }
+         .view-part{
+           flex-direction: column;
+         }
+         .view-part__title{
+           margin-bottom: 20px;
+         }
   }
-  @media only screen and (max-width:660px){
+  @media only screen and (max-width:650px){
       .search-box{
           width: 400px;
           max-width: 100%;
@@ -1901,8 +1958,14 @@ input::-webkit-slider-thumb {
       display: block;
     }
   }
-  @media only screen and (max-width:521px){
-    
+  @media only screen and (max-width:470px){
+    .main-footer__nav{
+      flex-direction: column;
+    }
+    .main-footer__btn{
+      order: -1;
+      margin-bottom: 20px;
+    }
     
   }
   
@@ -1924,5 +1987,17 @@ input::-webkit-slider-thumb {
     }
     .dinner-tips__title{
       font-size: 18px;
+    }
+    .view-part__title{
+      font-size: 24px;
+    }
+    .applied-filters{
+      flex-direction: column;
+    }
+    .applied-filters__text{
+      margin-bottom: 5px;
+    }
+    .applied-filters__selected{
+      margin-bottom: 5px;
     }
   }
