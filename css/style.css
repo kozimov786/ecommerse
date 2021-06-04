@@ -1556,6 +1556,129 @@
   color: var(--accent-color);
   margin-right: 4px;
 }
+/* FORM-PAGE-STYLES */
+.form-page-main__container{
+  display: flex;
+  align-items: start;
+  font-family: var(--poppins-font-stack);
+  color: var(--heading-color);
+}
+.billig-form__wrapper{
+  max-width: 670px;
+  margin-bottom: 64px;
+}
+.form__section{
+  margin-right: 32px;
+}
+.order-summary__card{
+  width: 468px;
+}
+.form-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.form-info__title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.form-info__text{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+  margin: 0;
+}
+.form-info__page-number{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: var(--opensans-font-stack);
+  color: #A9A9A9;
+  margin: 0;
+}
+.label-wrapper{
+  display: flex;
+  align-items: center;
+}
+.label-wrapper input{
+  width: 319px;
+  padding: 11px 18px;
+  display: block;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  font-family: var(--opensans-font-stack);
+}
+.label-wrapper label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 32px;
+}
+.label-wrapper label:first-child{
+  margin-right: 32px;
+}
+.country-select{
+  width: 319px;
+  padding: 8px 18px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  display: block;
+  border-radius: 12px;
+  font-family: var(--opensans-font-stack);
+  color: #a9a9a9;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+.form-checkbox{
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 11px 16px 11px 48px;
+}
+.form-checkbox__checkmark{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.method-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.method-text{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: var(--poppins-font-stack);
+  color: var(--heading-color);
+  margin: 0;
+}
+.method-text__accent{
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+.card-number__box{
+  padding: 11px 18px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  font-family: var(--opensans-font-stack);
+}
+
+
+
+
 
 
 
