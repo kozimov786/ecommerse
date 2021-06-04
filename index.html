@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>eCommerse</title>
@@ -528,49 +528,54 @@
             </div>
         </div>
 
-        <section class="customers">
+       
+               <!-- slider  -->
 
+        <section class="slider">
             <div class="global-container container">
                 <h2 class="global-container__title">Our customers says</h2>
                 <a class="global-container__btn" href="#">Button</a>
             </div>
 
-            <ul class="slides">
-                <li class="slide-card">
-                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
-                        smooth as pie. You will get all what you need by writiing a text here " </p>
-                    <h3 class="slide-card__user">Name and Surname</h3>
-                    <img class="slide-card__img" src="img/customer-img.png" alt="customer image" width="48" height="48">
-                </li>
-                <li class="slide-card">
-                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
-                        smooth as pie. You will get all what you need by writiing a text here " </p>
-                    <h3 class="slide-card__user">Name and Surname</h3>
-                    <img class="slide-card__img" src="img/customer-img2.png" alt="customer image" width="48"
-                        height="48">
-                </li>
-                <li class="slide-card">
-                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
-                        smooth as pie. You will get all what you need by writiing a text here " </p>
-                    <h3 class="slide-card__user">Name and Surname</h3>
-                    <img class="slide-card__img" src="img/customer-img.png" alt="customer image" width="48" height="48">
-                </li>
-                <li class="slide-card">
-                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
-                        smooth as pie. You will get all what you need by writiing a text here " </p>
-                    <h3 class="slide-card__user">Name and Surname</h3>
-                    <img class="slide-card__img" src="img/customer-img2.png" alt="customer image" width="48"
-                        height="48">
-                </li>
-
-                <li class="slide-card">
-                        <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here " </p>
-                        <h3 class="slide-card__user">Name and Surname</h3>
-                        <img class="slide-card__img" src="img/customer-img.png" alt="customer image" width="48" height="48">
-                </li> 
-
-            </ul>
-
+            <div class="slider-container">
+                <ul id="autoWidth" class="cs-hidden slider-flex">
+                    <li>
+                        <div class="profil-card">
+                            <p class="opinion">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                            <h3 class="name">Name and Surname</h3>
+                            <img class="user-img" src="img/customer-img.png" alt="Customer" width="48" height="48">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="profil-card">
+                            <p class="opinion">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                            <h3 class="name">Name and Surname</h3>
+                            <img class="user-img" src="img/customer-img2.png" alt="Customer" width="48" height="48">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="profil-card">
+                            <p class="opinion">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                            <h3 class="name">Name and Surname</h3>
+                            <img class="user-img" src="img/customer-img.png" alt="Customer" width="48" height="48">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="profil-card">
+                            <p class="opinion">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                            <h3 class="name">Name and Surname</h3>
+                            <img class="user-img" src="img/customer-img2.png" alt="Customer" width="48" height="48">
+                        </div>
+                    </li>
+                    <li>        
+                        <div class="profil-card">
+                            <p class="opinion">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                            <h3 class="name">Name and Surname</h3>
+                            <img class="user-img" src="img/customer-img.png" alt="Customer" width="48" height="48">
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="headline">
@@ -629,56 +634,66 @@
                 </div>
 
                 <div class="blog-wrapper">
-                   <div class="dinner-tips">
-                       <a class="dinner-tips__link" href="#">
-                        <img class="dinner-tips__img" src="img/food5.png" alt="food" width="469" height="400">
-                       </a>
-                       <h3 class="dinner-tips__title">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
-                       <span class="author-box"> Author<time class="author-time" datetime="2021-12-02">17. 6. 2020</time></span>
-                   </div>
+                    <div class="dinner-tips">
+                        <a class="dinner-tips__link" href="#">
+                            <img class="dinner-tips__img" src="img/food5.png" alt="food" width="469" height="400">
+                        </a>
+                        <h3 class="dinner-tips__title">Our chef tips for a great and tasty dinner ready in 20 minutes
+                        </h3>
+                        <span class="author-box"> Author<time class="author-time" datetime="2021-12-02">17. 6.
+                                2020</time></span>
+                    </div>
 
-                   <div class="vegetable">
-                       <img class="vegetable-img" src="img/food.png" alt="food" width="269" height="180">
-                       <a class="vegetable__link" href="#">
-                        <h3 class="vegetable-title">Which vegetable your family will love and want’s eat each day</h3>
-                       </a>
-                       <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
-                   </div>
+                    <div class="vegetable">
+                        <img class="vegetable-img" src="img/food.png" alt="food" width="269" height="180">
+                        <a class="vegetable__link" href="#">
+                            <h3 class="vegetable-title">Which vegetable your family will love and want’s eat each day
+                            </h3>
+                        </a>
+                        <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6.
+                                2020</time></span>
+                    </div>
 
-                   <div class="left-side">
-                       <div class="good-start">
-                          <div class="good-start__info">
-                            <a class="good-start__link" href="#">
-                                <h3 class="good-start__title">Salat is kinda good start to your morning routines</h3>
-                            </a>
-                            <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
-                          </div>
-                          <img src="img/food4.png" alt="food" width="96" height="96">
-                       </div>
-                       <div class="good-start">
-                        <div class="good-start__info">
-                          <a class="good-start__link" href="#">
-                              <h3 class="good-start__title">Salat is kinda good start to your morning routines</h3>
-                          </a>
-                          <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
+                    <div class="left-side">
+                        <div class="good-start">
+                            <div class="good-start__info">
+                                <a class="good-start__link" href="#">
+                                    <h3 class="good-start__title">Salat is kinda good start to your morning routines
+                                    </h3>
+                                </a>
+                                <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6.
+                                        2020</time></span>
+                            </div>
+                            <img src="img/food4.png" alt="food" width="96" height="96">
                         </div>
-                        <img src="img/food3.png" alt="food" width="96" height="96">
-                     </div>
-                     <div class="good-start">
-                        <div class="good-start__info">
-                          <a class="good-start__link" href="#">
-                              <h3 class="good-start__title">Salat is kinda good start to your morning routines</h3>
-                          </a>
-                          <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
+                        <div class="good-start">
+                            <div class="good-start__info">
+                                <a class="good-start__link" href="#">
+                                    <h3 class="good-start__title">Salat is kinda good start to your morning routines
+                                    </h3>
+                                </a>
+                                <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6.
+                                        2020</time></span>
+                            </div>
+                            <img src="img/food3.png" alt="food" width="96" height="96">
                         </div>
-                        <img src="img/food2.png" alt="food" width="96" height="96">
-                     </div>
-                   </div>
+                        <div class="good-start">
+                            <div class="good-start__info">
+                                <a class="good-start__link" href="#">
+                                    <h3 class="good-start__title">Salat is kinda good start to your morning routines
+                                    </h3>
+                                </a>
+                                <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6.
+                                        2020</time></span>
+                            </div>
+                            <img src="img/food2.png" alt="food" width="96" height="96">
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </section>
-        
+
     </main>
 
 
@@ -828,7 +843,7 @@
 
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/main.js"></script>
 </body>

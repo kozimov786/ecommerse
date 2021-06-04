@@ -19,8 +19,14 @@ window.addEventListener('DOMContentLoaded',()=>{
 });
 
 
-
-
+document.querySelector('.view-link__active-grid').addEventListener('click',()=>{
+  document.querySelector('.product-card__wrapper').classList.add('display-none')
+  document.querySelector('.grid-view__section').classList.remove('display-none')
+})
+document.querySelector('.view-link__active-list').addEventListener('click',()=>{
+  document.querySelector('.grid-view__section').classList.add('display-none')
+  document.querySelector('.product-card__wrapper').classList.remove('display-none')
+})
   let min = 1;
   let max = 100;
   
@@ -47,5 +53,16 @@ window.addEventListener('DOMContentLoaded',()=>{
     $("#line").css({
       left: calcLeftPosition(min) + "%",
       right: 100 - calcLeftPosition(newValue) + "%"
+    });
+  });
+
+
+  $(document).ready(function () {
+    $('#autoWidth').lightSlider({
+      autoWidth: true,
+      loop: true,
+      onSliderLoad: function () {
+        $('#autoWidth').removeClass('cS-hidden');
+      }
     });
   });
