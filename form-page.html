@@ -446,94 +446,248 @@
                 <div class="billing-method__wrapper">
                     <div class="form-info">
                         <div>
-                            <h2 class="form-info__title">Billing info</h2>
-                            <p class="form-info__text">Please enter your billing info</p>
+                            <h2 class="form-info__title">Billing method</h2>
+                            <p class="form-info__text">Please enter your payment method</p>
                         </div>
-                        <p class="form-info__page-number">Step 1 of 5</p>
+                        <p class="form-info__page-number">Step 2 of 5</p>
                     </div>
 
-                <form action="">
-                    <div class="method-box input-wrapper">
+                    <form action="">
+                        <div class="method-box input-wrapper">
 
-                        <label class="input-label" for="method-input-field">FedEx
-                            <input type="radio" name="input-radio-method" id="method-input-field" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                        <p class="method-text"><span class="method-text__accent">+32 USD</span>Additional price</p>
-                        <img src="img/fedex.svg" alt="FedEx logo" width="54" height="16">
-
-                    </div>
-
-                    <div class="method-box input-wrapper">
-                        <label class="input-label" for="method-input-field2">DHL
-                            <input type="radio" name="input-radio-method" id="method-input-field2">
-                            <span class="checkmark"></span>
-                        </label>
-                        <p class="method-text"><span class="method-text__accent">+32 USD</span>Additional price</p>
-                        <img src="img/dhl.svg" alt="dhl logo" width="94" height="14">
-                    </div>
-
-                </div>
-            </form>
-
-
-
-            <div class="payment-method__wrapper">
-                <div class="form-info">
-                    <div>
-                        <h2 class="form-info__title">Billing info</h2>
-                        <p class="form-info__text">Please enter your billing info</p>
-                    </div>
-                    <p class="form-info__page-number">Step 1 of 5</p>
-                </div>
-
-            <form action="">
-                <div class="method-box input-wrapper">
-
-                    <label class="input-label" for="payment-input-field">FedEx
-                        <input type="radio" name="input-radio-method" id="payment-input-field" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                   
-                    <img src="img/visa.svg" alt="visa logo" width="94" height="20">
-
-                </div>
-
-                <div class="payment-box input-wrapper">
-                   
-                        <div class="method-box ">
-                            <label class="input-label" for="payment-input-field2">DHL
-                                <input type="radio" name="input-radio-method" id="payment-input-field2">
+                            <label class="input-label" for="method-input-field">FedEx
+                                <input type="radio" name="input-radio-method" id="method-input-field" checked="checked">
                                 <span class="checkmark"></span>
                             </label>
-        
-                            <img src="img/paypal.svg" alt="paypal logo" width="76" height="18">
+                            <p class="method-text"><span class="method-text__accent">+32 USD</span>Additional price</p>
+                            <img src="img/fedex.svg" alt="FedEx logo" width="54" height="16">
+
                         </div>
-                        <label for="card-number-field">Card number</label>
-                        <input class="card-number__box" type="number" name="card-number" id="card-number-field" placeholder="Card number" required> 
-                      
+
+                        <div class="method-box input-wrapper">
+                            <label class="input-label" for="method-input-field2">DHL
+                                <input type="radio" name="input-radio-method" id="method-input-field2">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p class="method-text"><span class="method-text__accent">+32 USD</span>Additional price</p>
+                            <img src="img/dhl.svg" alt="dhl logo" width="94" height="14">
+                        </div>
+
+                    </form>
                 </div>
 
-                <div class="method-box input-wrapper">
-                    <label class="input-label" for="payment-input-field3">DHL
-                        <input type="radio" name="input-radio-method" id="payment-input-field3">
-                        <span class="checkmark"></span>
-                    </label>
-                    
-                    <img src="img/bitcoin.svg" alt="bitcoin logo" width="75" height="16">
+
+
+                <div class="payment-method__wrapper">
+                    <div class="form-info">
+                        <div>
+                            <h2 class="form-info__title">Payment method</h2>
+                            <p class="form-info__text">Please enter your payment method</p>
+                        </div>
+                        <p class="form-info__page-number">Step 3 of 5</p>
+                    </div>
+
+                    <form action="">
+
+                        <div class="payment-box visa-method">
+
+                            <div class="method-box ">
+                                <label class="input-label" for="payment-input-field2">Credit card
+                                    <input type="radio" name="input-radio-method" id="payment-input-field2">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <img src="img/visa.svg" alt="visa logo" width="94" height="20">
+                            </div>
+                            <label for="card-number-field">Card number</label>
+                            <input class="card-number__box" type="number" name="card-number" id="card-number-field"
+                                placeholder="Card number" required>
+                            <div>
+                                <label for="card-holder__field">Card holder
+                                    <input type="text" name="card-holder" id="card-holder__field"
+                                        placeholder="Card holder" required>
+                                </label>
+                                <label for="date__field">Expiration date
+                                    <input type="date" name="expiration-date" id="date__field" placeholder="DD/MM/YY"
+                                        required>
+                                </label>
+                                <label for="cvc__field">CVC
+                                    <input type="text" name="card-cvc" id="cvc__field" placeholder="CVC" required>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="payment-box paypal-method">
+
+                            <div class="method-box ">
+                                <label class="input-label" for="paypal-input-field">PayPal
+                                    <input type="radio" name="input-radio-method" id="paypal-input-field">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <img src="img/paypal.svg" alt="paypal logo" width="76" height="20">
+                            </div>
+                            <label for="paypal">Email or phone number</label>
+                            <input class="paypal-input" type="text" name="paypal-number" id="paypal-field"
+                                placeholder="Email or phone number" required>
+                        </div>
+
+
+
+                        <div class="method-box input-wrapper">
+                            <label class="input-label" for="payment-input-field3">DHL
+                                <input type="radio" name="input-radio-method" id="payment-input-field3">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <img src="img/bitcoin.svg" alt="bitcoin logo" width="75" height="16">
+                        </div>
+
+                    </form>
                 </div>
 
+                <div class="additional-informations">
+                    <div class="form-info">
+                        <div>
+                            <h2 class="form-info__title">Additional informations</h2>
+                            <p class="form-info__text">Need something else? We will make it for you!</p>
+                        </div>
+                        <p class="form-info__page-number">Step 4 of 5</p>
+                    </div>
+
+                    <form action="">
+                        <label for="input-info__field">
+                            <input type="text" name="input-info" id="input-info__field"
+                                placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..." required>
+                        </label>
+                    </form>
+                </div>
+
+                <div class="confirmation__wrapper">
+                    <div class="form-info">
+                        <div>
+                            <h2 class="form-info__title">Confirmation</h2>
+                            <p class="form-info__text">We are getting to the end. Just few clicks and your order si
+                                ready!</p>
+                        </div>
+                        <p class="form-info__page-number">Step 5 of 5</p>
+                    </div>
+
+
+                    <form action="">
+                        <label class="input-checkbox form-checkbox" for="input-conf__fields">I agree with sending an
+                            Marketing and newsletter emails. No spam, promissed!
+                            <input class="input-check" type="checkbox" name="input-checkbox-conf"
+                                id="input-conf__fields">
+                            <span class="checkbox-checkmark form-checkbox__checkmark"></span>
+                        </label>
+
+                        <label class="input-checkbox form-checkbox" for="input-conf__fields2">I agree with our <a
+                                href="#">terms and conditions</a> and <a href="#">privacy policy</a>.
+                            <input class="input-check" type="checkbox" name="input-checkbox-conf"
+                                id="input-conf__fields2">
+                            <span class="checkbox-checkmark form-checkbox__checkmark"></span>
+                        </label>
+                        <button class="form-conf__btn card-btn" type="submit">Complete order</button>
+                    </form>
+                    <div class="safe-info">
+                        <img src="img/safe.svg" alt="safe icon" width="26" height="28">
+                        <h3>All your data are safe</h3>
+                        <p>We are using the most advanced security to provide you the best experience ever.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="order-card">
+                <h2 class="order-card__title">Order Summary</h2>
+                <p class="order-card__text">Price can change depending on shipping method and taxes of your state.</p>
+               
+                <div class="order-card__info-wrapper">
+                    <div class="order-card__info">
+                        <img class="order-card__img" src="img/vegs-banner.png" alt="product image" width="100"
+                            height="67">
+                        <a class="order-card__link wishlist" href="#"> Wishlist</a>
+                        <a class="order-card__link compare" href="#"> Compare</a>
+                        <a class="order-card__link remove" href="#"> Remove</a>
+                    </div>
+
+                    <div class="order-card__cost">
+                        <h3 class="order-card__cost-title">Product title</h3>
+                        <div><span class="product-name">Farm:</span><span class="product-name__accent">Tharamis Farm</span></div>
+                         <div><span class="product-name">Freshness:</span><span class="product-name__accent">1 day old</span></div>
+                         <img src="img/star4.svg" alt="">
+                         <p class="order-cost__count">36.99 USD</p>
+                         <span class="cost-discount">48.56 USD</span>
+                    </div>
+                   <div class="order-select__info">
+                       <span class="order-select__text">1 pcs</span>
+                    <select class="order-select" name="" id="">
+                        <option value="">Pcs</option>
+                        <option value="">1 Pcs</option>
+                        <option value="">2 Pcs</option>
+                        <option value="">3 Pcs</option>
+                    </select>
+                   </div>
+                </div>
+
+                <div class="order-card__info-wrapper">
+                    <div class="order-card__info">
+                        <img class="order-card__img" src="img/vegs-banner.png" alt="product image" width="100"
+                            height="67">
+                        <a class="order-card__link wishlist" href="#"> Wishlist</a>
+                        <a class="order-card__link compare" href="#"> Compare</a>
+                        <a class="order-card__link remove" href="#"> Remove</a>
+                    </div>
+
+                    <div class="order-card__cost">
+                        <h3 class="order-card__cost-title">Product title</h3>
+                        <div><span class="product-name">Farm:</span><span class="product-name__accent">Tharamis Farm</span></div>
+                         <div><span class="product-name">Freshness:</span><span class="product-name__accent">1 day old</span></div>
+                         <img src="img/star4.svg" alt="">
+                         <p class="order-cost__count">36.99 USD</p>
+                         <span class="cost-discount">48.56 USD</span>
+                    </div>
+                   <div class="order-select__info">
+                       <span class="order-select__text">1 pcs</span>
+                    <select class="order-select" name="" id="">
+                        <option value="">Pcs</option>
+                        <option value="">1 Pcs</option>
+                        <option value="">2 Pcs</option>
+                        <option value="">3 Pcs</option>
+                    </select>
+                   </div>
+                </div>
+
+                <div class="product-ordering__info">
+                    <span>Subtotal</span>
+                    <span>73.98 USD</span>
+                </div>
+                <div class="product-ordering__info">
+                    <span>Tax</span>
+                    <span>17% 16.53 USD</span>
+                </div>
+                <div class="product-ordering__info">
+                    <span>Shipping</span>
+                    <span>0 USD</span>
+                </div>
+
+                <div class="ordering-form">
+                    <form action="">
+                        <input type="text" name="ordering-promo" id="ordering-promo-code" aria-label="ordering-promo-code" placeholder="Apply promo code">
+                        <button class="ordering-btn" type="submit">Apply now</button>
+                    </form>
+                </div>
+
+                <div class="total-order">
+                    <div class="total-order__info">
+                        <p class="total-order__info-text">Total Order</p>
+                        <p class="total-order__info-deliver">Guaranteed delivery day:  June 12, 2020</p>
+                    </div>
+                    <p class="total-order__cost">89.84 USD</p>
+                </div>
             </div>
-        </form>
-
-
-            </section>
-
-            <section class="order-summary">
-                <div class="order-summary__card">
-
-                </div>
-            </section>
         </div>
 
     </main>
@@ -542,146 +696,7 @@
     <footer class="site-footer">
         <div class="site-footer__container container">
 
-            <ul class="site-footer__list">
-                <li class="site-footer__item">
-                    <h2 class="footer-list__title">Get in touch</h2>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">About Us</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Careers</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Press Releases</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Blog</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="site-footer__item">
-                    <h2 class="footer-list__title">Connections</h2>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Facebook</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Twitter</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Instagram</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Youtube</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">LinkedIn</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="site-footer__item">
-                    <h2 class="footer-list__title">Earnings</h2>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Become an Affiliate</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Advertise your product</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Sell on Market</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="site-footer__item">
-                    <h2 class="footer-list__title">Account</h2>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Your account</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Returns Centre</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">100 % purchase protection</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Chat with us</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Help</a>
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
-
-            <div class="footer-tags">
-                <h2 class="footer-tags__title">Product tags</h2>
-                <ul class="footer-tags__list">
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Beans</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Carrots</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Apples</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Garlic</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Mushrooms</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Tomatoes</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Chilli peppers</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Broccoli</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Watermelons</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Oranges</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Bananas</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Grapes</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Cherries</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Meat</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Seo tag</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Fish</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Seo tag</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Fresh food</a>
-                    </li>
-                    <li class="tags-item">
-                        <a class="tags-link" href="#">Lemons</a>
-                    </li>
-                </ul>
-            </div>
+            <p class="copy-text">Copyright © 2020 Freshnesecom</p>
 
         </div>
     </footer>
