@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>eCommerse</title>
@@ -35,14 +36,14 @@
                 </ul>
                 <div class="contact-us">
                     <a class="contact-us__link contact-us__link-chat" href="#">Chat with us</a>
-                    <a class="contact-us__link" href="tel:+420336775664">+420 336 775 664</a>
+                    <a class="contact-us__link" href="tel:+420 336 775 664">+420 336 775 664</a>
                     <a class="contact-us__link" href="#">info@freshnesecom.com</a>
                 </div>
             </nav>
 
             <div class="header-main">
 
-                <a class="site-header__logo" href="index.html">
+                <a class="site-header__logo" href="#">
                     <img class="site-logo__img" src="img/site-header-logo.svg" alt="site logo" width="177" height="18">
                 </a>
 
@@ -99,16 +100,16 @@
                     <li class="menu-item">
                         <ul class="dropdown">
                             <li class="dropdown-item">
-                                <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                <a class="dropdown-link" href="category_list.html">Fruit and vegetables</a>
                             </li>
                             <li class="dropdown-item">
-                                <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                <a class="dropdown-link" href="category_list.html">Fruit and vegetables</a>
                             </li>
                             <li class="dropdown-item">
-                                <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                <a class="dropdown-link" href="category_list.html">Fruit and vegetables</a>
                             </li>
                             <li class="dropdown-item">
-                                <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                <a class="dropdown-link" href="category_list.html">Fruit and vegetables</a>
                             </li>
                         </ul>
                         <a class="menu-link" href="#">Fruit and vegetables</a>
@@ -246,16 +247,16 @@
                             <li class="menu-item">
                                 <ul class="dropdown more-dropdown">
                                     <li class="dropdown-item">
-                                        <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                        <a class="dropdown-link" href="category_list.html">Fruit and vegetables</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                        <a class="dropdown-link" href="category_list.html">Fruit and vegetables</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                        <a class="dropdown-link" href="category_list.html">Fruit and vegetables</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                        <a class="dropdown-link" href="category_list.html">Fruit and vegetables</a>
                                     </li>
                                 </ul>
                                 <a class="menu-link" href="#">Fruit and vegetables</a>
@@ -375,336 +376,349 @@
             </div>
         </div>
     </header>
-
+     
 
     <main class="site-main">
         <div class="page-links__wrapper container">
             <a class="home-page__link" href="index.html">Homepage</a>
-            <a class="category-page__link" href="#">Checkout page</a>
+            <a class="home-page__link" href="#">Fruit and vegetables</a>
+            <a class="category-page__link" href="#">Carrots from Tomissy Farm</a>
         </div>
 
-        <div class="form-page-main__container container">
+       <div class="content-main__container container">
 
-            <section class="form__section">
-                <div class="billig-form__wrapper">
-                    <div class="form-info">
-                        <div>
-                            <h2 class="form-info__title">Billing info</h2>
-                            <p class="form-info__text">Please enter your billing info</p>
-                        </div>
-                        <p class="form-info__page-number">Step 1 of 5</p>
-                    </div>
+        <div class="img-wrapper">
+            <img src="img/product-img.png" alt="product image" width="569" height="436">
+            <img src="img/product-img.png" alt="product image" width="569" height="436">
+            <img src="img/product-img.png" alt="product image" width="569" height="436">
+       </div>
+       
+       <div class="content-info">
+           <h1 class="content-info__title">Carrots from Tomissy Farm</h1>
+           <span class="customer-review">(1 customer review)</span>
+           <p class="content-info__text">Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a full love to his Bio products. Tomisso’s carrots are growing on the fields naturally.</p>
+           
+           <ul class="content-list">
+                <li class="content-item">
+                    <p class="content-item__text">SKU:</p>
+                    <p class="content-item__text">Category:</p>
+                    <p class="content-item__text">Stock:</p>
+                    <p class="content-item__text">Farm:</p>
+                </li>
 
+                <li class="content-item__ans">
+                    <p class="content-item__text">76645</p>
+                     <a class="content-item__link" href="#">
+                       <p class="content-item__text">Vegetables</p>
+                     </a>
+                     <a class="content-item__link" href="#">
+                        <p class="content-item__text">In Stock</p>
+                     </a>
+                    <p class="content-item__text">Grocery Tarm Fields</p>
+                </li>
 
-                    <form action="#">
-                        <div class="label-wrapper">
-                            <label for="fname">First name
-                                <input type="text" name="fname" id="fname" placeholder="First name" required>
-                            </label>
-                            <label for="lname">Last name
-                                <input type="text" name="lname" id="lname" placeholder="Last name" required>
-                            </label>
-                        </div>
-                        <div class="label-wrapper">
-                            <label for="email">Email address
-                                <input type="email" name="email" id="email" placeholder="Email address" required>
-                            </label>
-                            <label for="number">Phone number
-                                <input type="tel" name="number" id="number" placeholder="Phone number" required>
-                            </label>
-                        </div>
-                        <div class="label-wrapper">
-                            <label for="address">Address
-                                <input type="text" name="address" id="adress" placeholder="Address" required>
-                            </label>
-                            <label for="town">Town / City
-                                <input type="text" name="town" id="town" placeholder="Town or city" required>
-                            </label>
-                        </div>
-                        <div class="label-wrapper">
-                            <label for="country">State / Country
-                                <select class="country-select" name="" id="">
-                                    <option value="Choose a state or Country">Choose a state or Country</option>
-                                    <option value="">Uzbekiston</option>
-                                    <option value="">The USA</option>
-                                    <option value="">The UK</option>
-                                </select>
-                            </label>
-                            <label for="zip-code">ZIP/Postal code
-                                <input type="number" name="zip-code" id="zip-code" placeholder="Postal code or ZIP"
-                                    required>
-                            </label>
-                        </div>
-                        <label class="input-checkbox form-checkbox" for="input-brands__fields">Ship to a different
-                            address?
-                            <input class="input-check" type="checkbox" name="input-checkbox" id="input-brands__fields">
-                            <span class="checkbox-checkmark form-checkbox__checkmark"></span>
-                        </label>
-                    </form>
+                <li class="content-item">
+                    <p class="content-item__text">Freshness:</p>
+                    <p class="content-item__text">Freshness:</p>
+                    <p class="content-item__text">Delivery:</p>
+                    <p class="content-item__text">Delivery area</p>
+                </li>
+
+                <li class="content-item__ans">
+                    <p class="content-item__text">1 days old</p>
+                    <p class="content-item__text">pcs, kgs, box, pack</p>
+                    <p class="content-item__text">in 2 days</p>
+                    <p class="content-item__text">Czech republic</p>
+                </li>
+            </ul>
+
+            <div class="content-card">
+                <div>
+                    <p class="content-cost">36.23 USD</p>
+                    <span class="content-cost__disc">48.56 USD</span>
                 </div>
+                <form class="content-form" action="">
+                    <p class="content-form__value">1</p>
+                   <select name="" id="">
+                       <option value="pcs">Pcs</option>
+                       <option value="pcs">Pcs</option>
+                       <option value="pcs">Pcs</option>
+                   </select>
+                </form>
+                <a class="content-form__btn card-btn" href="#">Add to cart</a>
+            </div>
 
-                <div class="billing-method__wrapper">
-                    <div class="form-info">
-                        <div>
-                            <h2 class="form-info__title">Billing method</h2>
-                            <p class="form-info__text">Please enter your payment method</p>
-                        </div>
-                        <p class="form-info__page-number">Step 2 of 5</p>
-                    </div>
+            <div class="content-link__wrapper">
+                <a class="content-link wishlist" href="#">Add to my wish list</a>
+                <a class="content-link compare" href="#">Compare</a>
+            </div>
 
-                    <form action="">
-                        <div class="method-box input-wrapper">
+            <ul class="desc-list">
+                <li class="desc-item">Description</li>
+                <li class="desc-item">Reviews <span>18</span></li>
+                <li class="desc-item">Questions <span>10</span></li>
+            </ul>
+            <div class="light-line"><span class="accent-line"></span></div>
 
-                            <label class="input-label" for="method-input-field">FedEx
-                                <input type="radio" name="input-radio-method" id="method-input-field" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <p class="method-text"><span class="method-text__accent">+32 USD</span>Additional price</p>
-                            <img src="img/fedex.svg" alt="FedEx logo" width="54" height="16">
+            <h3 class="desc-info__title">Origins</h3>
+            <p class="desc-info__text">We work hard to ensure that the fruit and vegetables we sell are fresh and high in quality. If we don’t grow them ourselves, we source them from carefully chosen suppliers, preferring to buy locally whenever possible.</p>
+             
+            <h3 class="desc-info__title">How to cook</h3>
+            <p class="desc-info__text">From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour to an enormous number of recipes.</p>
+       
+            <h3 class="desc-info__title">Full of Vitamins!</h3>
 
-                        </div>
+            <table>
+                <tr class="tr">
+                    <th>Vitamins</th>
+                    <th>Quantity</th>
+                    <th>% DV</th>
+                </tr>
+                <tr>
+                    <td class="disabled">Vitamin A equiv.</td>
+                    <td class="disabled">735 μg</td>
+                    <td class="disabled">104 %</td>
+                </tr>
+                <tr>
+                    <td class="disabled">Thiamine (B1)</td>
+                    <td class="disabled">0.066 mg</td>
+                    <td class="disabled">6 %</td>
+                </tr>
+                <tr>
+                    <td class="disabled">Niacin (B3)</td>
+                    <td class="disabled">0.983 mg</td>
+                    <td class="disabled">7 %</td>
+                </tr>
+                <tr>
+                    <td class="disabled">Island Trading</td>
+                    <td class="disabled">Helen Bennett</td>
+                    <td class="disabled">UK</td>
+                </tr>
+                <tr>
+                    <td class="disabled">Folate (Bg)</td>
+                    <td class="disabled">19 μg</td>
+                    <td class="disabled">5 %</td>
+                </tr>
+                <tr>
+                    <td class="disabled">Vitamin C</td>
+                    <td class="disabled">5.9 mg</td>
+                    <td class="disabled">7 %</td>
+                </tr>
+                <tr>
+                    <td class="disabled">Vitamin G</td>
+                    <td class="disabled">3.9 mg</td>
+                    <td class="disabled">7 %</td>
+                </tr>
+                <tr>
+                    <td class="disabled">Vitamin K</td>
+                    <td class="disabled">5.9 mg</td>
+                    <td class="disabled">9 %</td>
+                </tr>
+            </table>
 
-                        <div class="method-box input-wrapper">
-                            <label class="input-label" for="method-input-field2">DHL
-                                <input type="radio" name="input-radio-method" id="method-input-field2">
-                                <span class="checkmark"></span>
-                            </label>
-                            <p class="method-text"><span class="method-text__accent">+32 USD</span>Additional price</p>
-                            <img src="img/dhl.svg" alt="dhl logo" width="94" height="14">
-                        </div>
+        </div>
+         
+       </div>
+       <section class="headline">
+        <div class="headline-container container">
 
-                    </form>
-                </div>
+            <div class="global-container">
+                <h2 class="global-container__title">Related products</h2>
+                <a class="global-container__btn" href="#">More products</a>
+            </div>
 
-
-
-                <div class="payment-method__wrapper">
-                    <div class="form-info">
-                        <div>
-                            <h2 class="form-info__title">Payment method</h2>
-                            <p class="form-info__text">Please enter your payment method</p>
-                        </div>
-                        <p class="form-info__page-number">Step 3 of 5</p>
-                    </div>
-
-                    <form action="">
-
-                        <div class="payment-box visa-method">
-
-                            <div class="method-box ">
-                                <label class="input-label" for="payment-input-field2">Credit card
-                                    <input type="radio" name="input-radio-method" id="payment-input-field2">
-                                    <span class="checkmark"></span>
-                                </label>
-
-                                <img src="img/visa.svg" alt="visa logo" width="94" height="20">
-                            </div>
-                            <label for="card-number-field">Card number</label>
-                            <input class="card-number__box" type="number" name="card-number" id="card-number-field"
-                                placeholder="Card number" required>
-                            <div>
-                                <label for="card-holder__field">Card holder
-                                    <input type="text" name="card-holder" id="card-holder__field"
-                                        placeholder="Card holder" required>
-                                </label>
-                                <label for="date__field">Expiration date
-                                    <input type="date" name="expiration-date" id="date__field" placeholder="DD/MM/YY"
-                                        required>
-                                </label>
-                                <label for="cvc__field">CVC
-                                    <input type="text" name="card-cvc" id="cvc__field" placeholder="CVC" required>
-                                </label>
-                            </div>
-                        </div>
-
-
-                        <div class="payment-box paypal-method">
-
-                            <div class="method-box ">
-                                <label class="input-label" for="paypal-input-field">PayPal
-                                    <input type="radio" name="input-radio-method" id="paypal-input-field">
-                                    <span class="checkmark"></span>
-                                </label>
-
-                                <img src="img/paypal.svg" alt="paypal logo" width="76" height="20">
-                            </div>
-                            <label for="paypal">Email or phone number</label>
-                            <input class="paypal-input" type="text" name="paypal-number" id="paypal-field"
-                                placeholder="Email or phone number" required>
-                        </div>
-
-
-
-                        <div class="method-box input-wrapper">
-                            <label class="input-label" for="payment-input-field3">DHL
-                                <input type="radio" name="input-radio-method" id="payment-input-field3">
-                                <span class="checkmark"></span>
-                            </label>
-
-                            <img src="img/bitcoin.svg" alt="bitcoin logo" width="75" height="16">
-                        </div>
-
-                    </form>
-                </div>
-
-                <div class="additional-informations">
-                    <div class="form-info">
-                        <div>
-                            <h2 class="form-info__title">Additional informations</h2>
-                            <p class="form-info__text">Need something else? We will make it for you!</p>
-                        </div>
-                        <p class="form-info__page-number">Step 4 of 5</p>
-                    </div>
-
-                    <form action="">
-                        <label for="input-info__field">
-                            <input type="text" name="input-info" id="input-info__field"
-                                placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..." required>
-                        </label>
-                    </form>
-                </div>
-
-                <div class="confirmation__wrapper">
-                    <div class="form-info">
-                        <div>
-                            <h2 class="form-info__title">Confirmation</h2>
-                            <p class="form-info__text">We are getting to the end. Just few clicks and your order si
-                                ready!</p>
-                        </div>
-                        <p class="form-info__page-number">Step 5 of 5</p>
-                    </div>
-
-
-                    <form action="">
-                        <label class="input-checkbox form-checkbox" for="input-conf__fields">I agree with sending an
-                            Marketing and newsletter emails. No spam, promissed!
-                            <input class="input-check" type="checkbox" name="input-checkbox-conf"
-                                id="input-conf__fields">
-                            <span class="checkbox-checkmark form-checkbox__checkmark"></span>
-                        </label>
-
-                        <label class="input-checkbox form-checkbox" for="input-conf__fields2">I agree with our <a
-                                href="#">terms and conditions</a> and <a href="#">privacy policy</a>.
-                            <input class="input-check" type="checkbox" name="input-checkbox-conf"
-                                id="input-conf__fields2">
-                            <span class="checkbox-checkmark form-checkbox__checkmark"></span>
-                        </label>
-                        <button class="form-conf__btn card-btn" type="submit">Complete order</button>
-                    </form>
-                    <div class="safe-info">
-                        <img src="img/safe.svg" alt="safe icon" width="26" height="28">
-                        <h3>All your data are safe</h3>
-                        <p>We are using the most advanced security to provide you the best experience ever.</p>
+            <div class="cards-wrapper">
+                <div class="card">
+                    <h3 class="card-title">Product Title</h3>
+                    <p class="card-text">Space for a small product description </p>
+                    <div class="card-box">
+                        <b class="card-price">1.48 USD<span></span></b>
+                        <a class="card-btn btn" href="form-page.html">Buy now</a>
                     </div>
                 </div>
 
-            </section>
-
-            <div class="order-card">
-                <h2 class="order-card__title">Order Summary</h2>
-                <p class="order-card__text">Price can change depending on shipping method and taxes of your state.</p>
-               
-                <div class="order-card__info-wrapper">
-                    <div class="order-card__info">
-                        <img class="order-card__img" src="img/vegs-banner.png" alt="product image" width="100"
-                            height="67">
-                        <a class="order-card__link wishlist" href="#"> Wishlist</a>
-                        <a class="order-card__link compare" href="#"> Compare</a>
-                        <a class="order-card__link remove" href="#"> Remove</a>
+                <div class="card">
+                    <h3 class="card-title">Product Title</h3>
+                    <p class="card-text">Space for a small product description </p>
+                    <div class="card-box">
+                        <b class="card-price">1.48 USD<span></span></b>
+                        <a class="card-btn btn" href="form-page.html">Buy now</a>
                     </div>
+                </div>
 
-                    <div class="order-card__cost">
-                        <h3 class="order-card__cost-title">Product title</h3>
-                        <div><span class="product-name">Farm:</span><span class="product-name__accent">Tharamis Farm</span></div>
-                         <div><span class="product-name">Freshness:</span><span class="product-name__accent">1 day old</span></div>
-                         <img src="img/star4.svg" alt="">
-                         <p class="order-cost__count">36.99 USD</p>
-                         <span class="cost-discount">48.56 USD</span>
+                <div class="card">
+                    <h3 class="card-title">Product Title</h3>
+                    <p class="card-text">Space for a small product description </p>
+                    <div class="card-box">
+                        <b class="card-price">1.48 USD<span></span></b>
+                        <a class="card-btn btn" href="form-page.html">Buy now</a>
                     </div>
-                   <div class="order-select__info">
-                       <span class="order-select__text">1 pcs</span>
-                    <select class="order-select" name="" id="">
-                        <option value="">Pcs</option>
-                        <option value="">1 Pcs</option>
-                        <option value="">2 Pcs</option>
-                        <option value="">3 Pcs</option>
-                    </select>
-                   </div>
                 </div>
 
-                <div class="order-card__info-wrapper">
-                    <div class="order-card__info">
-                        <img class="order-card__img" src="img/vegs-banner.png" alt="product image" width="100"
-                            height="67">
-                        <a class="order-card__link wishlist" href="#"> Wishlist</a>
-                        <a class="order-card__link compare" href="#"> Compare</a>
-                        <a class="order-card__link remove" href="#"> Remove</a>
+                <div class="card">
+                    <h3 class="card-title">Product Title</h3>
+                    <p class="card-text">Space for a small product description </p>
+                    <div class="card-box">
+                        <b class="card-price">1.48 USD<span></span></b>
+                        <a class="card-btn btn" href="form-page.html">Buy now</a>
                     </div>
-
-                    <div class="order-card__cost">
-                        <h3 class="order-card__cost-title">Product title</h3>
-                        <div><span class="product-name">Farm:</span><span class="product-name__accent">Tharamis Farm</span></div>
-                         <div><span class="product-name">Freshness:</span><span class="product-name__accent">1 day old</span></div>
-                         <img src="img/star4.svg" alt="">
-                         <p class="order-cost__count">36.99 USD</p>
-                         <span class="cost-discount">48.56 USD</span>
-                    </div>
-                   <div class="order-select__info">
-                       <span class="order-select__text">1 pcs</span>
-                    <select class="order-select" name="" id="">
-                        <option value="">Pcs</option>
-                        <option value="">1 Pcs</option>
-                        <option value="">2 Pcs</option>
-                        <option value="">3 Pcs</option>
-                    </select>
-                   </div>
-                </div>
-
-                <div class="product-ordering__info">
-                    <span>Subtotal</span>
-                    <span>73.98 USD</span>
-                </div>
-                <div class="product-ordering__info">
-                    <span>Tax</span>
-                    <span>17% 16.53 USD</span>
-                </div>
-                <div class="product-ordering__info">
-                    <span>Shipping</span>
-                    <span>0 USD</span>
-                </div>
-
-                <div class="ordering-form">
-                    <form action="">
-                        <input type="text" name="ordering-promo" id="ordering-promo-code" aria-label="ordering-promo-code" placeholder="Apply promo code">
-                        <button class="ordering-btn" type="submit">Apply now</button>
-                    </form>
-                </div>
-
-                <div class="total-order">
-                    <div class="total-order__info">
-                        <p class="total-order__info-text">Total Order</p>
-                        <p class="total-order__info-deliver">Guaranteed delivery day:  June 12, 2020</p>
-                    </div>
-                    <p class="total-order__cost">89.84 USD</p>
                 </div>
             </div>
         </div>
-
+    </section>
     </main>
 
+   
 
     <footer class="site-footer">
         <div class="site-footer__container container">
 
-            <p class="copy-text">Copyright © 2020 Freshnesecom</p>
+            <ul class="site-footer__list">
+                <li class="site-footer__item">
+                    <h2 class="footer-list__title">Get in touch</h2>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">About Us</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Careers</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Press Releases</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="site-footer__item">
+                    <h2 class="footer-list__title">Connections</h2>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Facebook</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Twitter</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Instagram</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Youtube</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="site-footer__item">
+                    <h2 class="footer-list__title">Earnings</h2>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Become an Affiliate</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Advertise your product</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Sell on Market</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="site-footer__item">
+                    <h2 class="footer-list__title">Account</h2>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Your account</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Returns Centre</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">100 % purchase protection</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Chat with us</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Help</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="footer-tags">
+                <h2 class="footer-tags__title">Product tags</h2>
+                <ul class="footer-tags__list">
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Beans</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Carrots</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Apples</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Garlic</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Mushrooms</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Tomatoes</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Chilli peppers</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Broccoli</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Watermelons</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Oranges</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Bananas</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Grapes</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Cherries</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Meat</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Seo tag</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Fish</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Seo tag</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Fresh food</a>
+                    </li>
+                    <li class="tags-item">
+                        <a class="tags-link" href="#">Lemons</a>
+                    </li>
+                </ul>
+            </div>
 
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
