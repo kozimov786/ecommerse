@@ -86,10 +86,7 @@
     color: var(--heading-color);
   }
   
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+
   
   .visually-hidden {
     position: absolute;
@@ -180,6 +177,8 @@
  }
  .site-logo__img{
      display: block;
+     width: 100%;
+     height: auto;
  }
  .search-box{
      width: 500px;
@@ -2185,8 +2184,7 @@ tr:nth-child(even) {
 
 .blog-tips {
   margin: 0;
-  width: 569px;
-  padding-right: 165px;
+  position: relative;
 }
 
 .blog-tips .tips {
@@ -2196,28 +2194,9 @@ tr:nth-child(even) {
 
 .blog-tips:first-child {
   margin-right: 32px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/tuhum.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.blog-tips:first-child:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/tuhum.png');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.kimchi {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/kimchi.png');
-  background-position: bottom;
-}
-
-.kimchi:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/kimchi.png');
-  background-position: top;
-}
 
 .btn-next::after {
   transform: rotate(0deg);
@@ -2226,11 +2205,12 @@ tr:nth-child(even) {
 .archives {
   padding-top: 48px;
   display: flex;
+  margin-bottom: 48px;
 }
 
 .archives-menu {
-  width: 290px;
-  margin-right: 32px;
+  width: 269px;
+  margin-right: auto;
 }
 
 .archives-lists {
@@ -2258,6 +2238,7 @@ tr:nth-child(even) {
 }
 
 .archive-item p {
+  width: 269px;
   font-family: var(--opensans-font-stack);
   font-size: 14px;
   font-weight: 400;
@@ -2266,31 +2247,34 @@ tr:nth-child(even) {
 }
 
 .subs {
-  padding: 10px;
+  width: 269px;
+  padding: 10px 16px;
   border-radius: 10px;
   border: 1px solid #777;
   display: flex;
   align-items: center;
   background-color: #f5f5f5;
-  width: 85%;
 }
-
+.subs form{
+  display: flex;
+  align-items: center;
+}
 .subs input {
   border: none;
   background-color: transparent;
   outline: none;
-  max-width: 140px;
+  width: 150px;
 }
 
 .subs button {
   background-color: transparent;
   border: none;
   font-weight: bold;
+  font-family: var(--poppins-font-stack);
 }
 
 .archives-card {
   width: 871px;
-  margin-left: auto;
 }
 
 .archives-card-list {
@@ -2303,10 +2287,11 @@ tr:nth-child(even) {
 
 .archives-card-item {
   max-width: 269px;
-  margin-right: 32px;
   margin-bottom: 20px;
 }
-
+.archives-card-item:not(:nth-child(3n)){
+   margin-right: 32px;
+}
 .archives-card-item img {
   margin-bottom: 24px;
 }
@@ -2595,8 +2580,19 @@ tr:nth-child(even) {
 .fin {
   margin: 0;
 }
-
-
+.gallery-main__wrapper{
+  display: flex;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.gallery-main__wrapper .dinner-tips::before{
+  content: "Tag";
+  width: 40px;
+}
+.gallery-main__wrapper .dinner-tips:not(:last-child){
+   margin-right: 32px;
+}
 
 
 
