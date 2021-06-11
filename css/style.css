@@ -2709,6 +2709,14 @@ tr:nth-child(even) {
   /* RESPONSIVE */
 
   /* SITE-HEADER */
+  @media only screen and (max-width:1190px){
+    .archives-menu{
+      margin-right: 32px;
+    }
+    .archives-card-item:not(:nth-child(2n)){
+      margin-right: 32px;
+    }
+  }
   @media only screen and (max-width:1167px) {
     .more-item{
       display: block;
@@ -2728,6 +2736,9 @@ tr:nth-child(even) {
     }
     .headline .card:nth-child(3){
       margin-right: 0;
+    }
+    .dinner-tips__img-gallery{
+      max-width: 500px;
     }
   }
   @media only screen and (max-width:1125px){
@@ -2796,6 +2807,10 @@ tr:nth-child(even) {
       width: 400px;
       height: auto;
     }
+    .dinner-tips__img-gallery{
+      max-width: 450px;
+      height: auto;
+    }
   }
   @media only screen and (max-width:1012px) {
     .more-item{
@@ -2817,7 +2832,10 @@ tr:nth-child(even) {
     .good-start{
       margin-top: 30px;
     }
-    
+    .dinner-tips__img-gallery{
+      max-width: 400px;
+      height: auto;
+    }
   }
  
   @media only screen and (max-width:890px){
@@ -2865,6 +2883,7 @@ tr:nth-child(even) {
       width: 350px;
       height: auto;
     }
+    
   }
   @media only screen and (max-width:860px){
     .header-main{
@@ -2916,6 +2935,12 @@ tr:nth-child(even) {
     }
     .img-wrapper img:last-child{
       margin-bottom: 20px;
+    }
+    .gallery-main__wrapper{
+      flex-direction: column;
+    }
+    .gallery-main__wrapper .dinner-tips:not(:last-child){
+      margin-right: 0;
     }
 }
   @media only screen and (max-width:831px) {
@@ -3076,6 +3101,23 @@ tr:nth-child(even) {
          }
          .view-part__title{
            margin-bottom: 20px;
+         }
+         .archives{
+           flex-direction: column;
+           align-items: center;
+         }
+         .archives-card-list{
+           flex-direction: column;
+           max-width: 300px;
+           margin-left: auto;
+           margin-right: auto;
+         }
+         .archives-card-item{
+           margin-right: 0 !important;
+         }
+         .archives-menu{
+           margin-right: 0;
+           text-align: center;
          }
   }
   @media only screen and (max-width:650px){
